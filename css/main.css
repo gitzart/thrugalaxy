@@ -1,0 +1,191 @@
+/* Universal elements */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background: url(../images/t3.jpg) no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  font-size: 13px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  height: 100vh;
+  text-align: center;
+  transition: font-size .5s;
+}
+
+/* Outermost elements */
+body, header, main, footer {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+}
+
+header, footer {
+  align-content: center;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+header {
+  letter-spacing: 8.5px;
+  min-height: 250px;
+}
+
+main {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #ccc;
+  min-height: 300px;
+}
+
+footer {
+  min-height: 150px;
+}
+
+/* Outer elements */
+.logo, .site-name, .intro-text,
+.social-btn-container, .social-search-container,
+.copymiddle, .bragging-rights {
+  width: 100%;
+}
+
+/* Inner elements */
+.logo {
+  padding: 15px 0;
+}
+
+.social-btn-container, .social-search-container {
+  margin: auto;
+}
+
+.left {
+  padding-left: 20px;
+  text-align: left;
+}
+
+.right {
+  padding-right: 20px;
+  text-align: right;
+}
+
+.fun-text, .social-btn, .social-search {
+  margin: auto;
+  max-width: 768px;
+}
+
+.fun-text {
+  padding-bottom: 10px;
+}
+
+.s-btn, .s-search {
+  background-color: transparent;
+  border: 1px solid #888;
+  border-radius: 3px;
+  color: #888;
+  font-size: 1rem;
+  outline: none;
+  padding: 1rem;
+  width: 270px;
+}
+
+.s-search {
+  transition: width .5s;
+}
+
+/* Social buttons */
+.twitter:hover .smark {                 /* twitter */
+  color: #1da1f2;
+}
+
+.facebook:hover .smark {                /* facebook */
+  color: #3b5998;
+}
+
+.youtube:hover .smark {                 /* youtube */
+  color: #cd201f;
+}
+
+.pinterest:hover .smark {               /* pinterest */
+  color: #bd081c;
+}
+
+.instagram:hover .instagram-blue {      /* instagram */
+  color: #5851db;
+}
+
+.instagram:hover .instagram-purple {
+  color: #833ab4;
+}
+
+.instagram:hover .instagram-pink {
+  color: #c13584;
+}
+
+.instagram:hover .instagram-red {
+  color: #fd1d1d;
+}
+
+.instagram:hover .instagram-orange {
+  color: #f77737;
+}
+
+.instagram:hover .instagram-yellow {
+  color: #fcaf45;
+}
+
+.flickr:hover .flickr-blue {            /* flickr */
+  color: #0063dc;
+}
+
+.flickr:hover .flickr-pink {
+  color: #ff0084;
+}
+
+.me {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Support query */
+@supports (-webkit-backdrop-filter: blur()) {
+  header, footer {
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+
+  main {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  header, main, footer {
+    -webkit-backdrop-filter: saturate(150%) blur(30px);
+  }
+}
+
+/* Media query */
+@media screen and (min-width: 544px) {
+
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+
+  header {
+    letter-spacing: 10px;
+  }
+
+  .s-search:focus {
+    width: 400px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+
+}
+
+@media screen and (min-width: 1200px) {
+
+}
